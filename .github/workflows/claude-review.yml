@@ -413,7 +413,7 @@ jobs:
         # posted, the gate step was skipped, and each hand rerun re-posted an
         # identical verdict. continue-on-error keeps the gate step running.
         continue-on-error: true
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1 (node24)
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.1 (node24)
         with:
           name: reviewer-transcript-${{ github.event.pull_request.number }}-${{ github.run_id }}-${{ github.run_attempt }}
           # if-no-files-found: warn keeps a missing file a warning rather than a
