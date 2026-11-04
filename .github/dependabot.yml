@@ -1,0 +1,6 @@
+version: 2
+updates:
+  # Keeps the SHA-pinned actions current.
+  - package-ecosystem: github-actions
+    directories: ["/", "/.github/actions/setup"]
+    schedule: { interval: weekly }

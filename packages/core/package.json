@@ -1,0 +1,20 @@
+{
+	"name": "@slothprep/core",
+	"private": true,
+	"type": "module",
+	"exports": {
+		"./career-ops": "./src/career-ops.ts"
+	},
+	"scripts": {
+		"typecheck": "tsc",
+		"test": "vitest run"
+	},
+	"dependencies": {
+		"zod": "catalog:"
+	},
+	"devDependencies": {
+		"typescript": "catalog:",
+		"vitest": "catalog:",
+		"@types/node": "catalog:"
+	}
+}
