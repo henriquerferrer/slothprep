@@ -218,7 +218,7 @@ jobs:
         if: steps.token.outputs.present == 'true'
         with:
           fetch-depth: 0
-      - uses: anthropics/claude-code-action@756cc22e19660d20e8cc9496b4f242475a7f7790 # v1.0.235
+      - uses: anthropics/claude-code-action@61a9c274fa7110a66dfafc1bbbced03833eb25fe # v1.0.269
         id: reviewer
         if: steps.token.outputs.present == 'true'
         # continue-on-error so a first pass that CRASHES (not just one that
@@ -359,7 +359,7 @@ jobs:
             echo "::warning::First pass ended cleanly with NO verdict — running the retry pass. This is the lost-turn failure the retry exists for; the first pass's transcript is kept as claude-execution-output.pass1.json in the artifact."
           fi
 
-      - uses: anthropics/claude-code-action@756cc22e19660d20e8cc9496b4f242475a7f7790 # v1.0.235
+      - uses: anthropics/claude-code-action@61a9c274fa7110a66dfafc1bbbced03833eb25fe # v1.0.269
         id: retry
         # The one re-invocation the first pass may have assumed it would get.
         # Runs only when the first pass posted nothing and the PR does not edit
